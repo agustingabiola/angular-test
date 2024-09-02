@@ -11,5 +11,5 @@ import { TopBarComponent } from './top-bar/top-bar.component';
   imports: [RouterOutlet, TopBarComponent]
 })
 export class AppComponent {
-  name = 'Mahisoft Store';
+  name = 'Mahisoft';
 }

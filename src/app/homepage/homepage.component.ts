@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
     styleUrls: ['./homepage.component.css'],
 })
 export class HomePageComponent {
+    name = "Mahisoft"
 
+    products = [{id: 'win', name: 'Windows'}, {id: 'osx', name: 'MacOS'}, {id: 'linux', name: 'Linux'}];
 }

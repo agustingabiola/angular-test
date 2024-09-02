@@ -1,1 +1,6 @@
-HOMEPAGE
+<h1>Welcome to {{ name }} !</h1>
+
+
+@for (product of products; track product.id) {
+    {{ product.name }}
+}
