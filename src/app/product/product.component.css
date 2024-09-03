@@ -1,0 +1,24 @@
+.product-container {
+    border: 1px solid gray;
+    padding: 16px;
+    height: 100%;
+}
+
+.product-container.fav {
+    border-color: red;
+}
+
+.product-container > p {
+    height: 3lh;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+span {
+    font-size: 14px;
+    font-weight: bold;
+}

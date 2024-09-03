@@ -1,3 +1,14 @@
 h1 {
     text-align: center;
 }
+
+label {
+    padding-left: 16px;
+}
+
+.products-search-results {
+    margin: 0px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}

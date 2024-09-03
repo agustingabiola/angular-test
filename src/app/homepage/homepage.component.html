@@ -1,6 +1,16 @@
 <h1>Welcome to {{ name }} !</h1>
 
+<label for="framework">
+    Search Products:
+    <input id="framework" type="text" [(ngModel)]="query" />
+</label>
 
-@for (product of products; track product.id) {
-    {{ product.name }}
+@if (query) {
+    <p>Results for: {{query}}</p>
 }
+
+<div class="products-search-results">
+    @for (product of products$ | async; track product.id) {
+        <product [product]="product" />
+    }
+</div>
